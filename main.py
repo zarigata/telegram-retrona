@@ -45,8 +45,8 @@ async def handle_message(update: Update,context: ContextTypes.DEFAULT_TYPE):
 
     if message_type == 'group':
         if BOT_USERNAME in text:
-            new_text: str = text.replace(BOT_USERNAME,'').strip
-            response['message']['content']: str = handle_responses(new_text)
+            new_text: str = text.replace(BOT_USERNAME,'').strip()
+            response: str = handle_responses(new_text)
         else:
             return
     else:
