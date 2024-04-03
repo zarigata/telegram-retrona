@@ -1,0 +1,8 @@
+# This file is used by pip to install required packages for this application.
+# You can use "pip install -r requirements.txt" to automatically install all dependencies.
+
+telegram  # Assuming version 0.1.8 was used when writing the script. Check if newer versions work or not.
+pydantic  # This is a dependency of telegram package.
+PyYAML  # This is also a dependency of telegram package.
+python-telegram-bot  # This might be needed as it's mentioned in the documentation for python-telegram-bot.
+ollama  # Assuming this is the version you are using, check if newer versions work or not.
