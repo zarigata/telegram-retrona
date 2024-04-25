@@ -1,17 +1,17 @@
-# Use an official Python runtime as a parent image
-FROM python:3.7-slim
+# Use an official Python runtime as a parent image, based on python:3.8-slim image from DockerHub
+FROM python:3.8-slim 
 
 # Set the working directory in the container to /app
-WORKDIR /app
+WORKDIR /app 
 
-# Add the current directory contents into the container at /app
-ADD . /app
+# Copy the current directory contents into the container at /app
+COPY . /app 
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install -r requirements.txt 
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Expose port 5000 for use by other parts of your system/applications
+EXPOSE 5000 
 
-# Run app.py when the container launches
+# On container startup, run main.py with Python
 CMD ["python", "main.py"]
