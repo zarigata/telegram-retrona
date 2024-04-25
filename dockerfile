@@ -12,6 +12,8 @@ RUN pip install -r requirements.txt
 
 # Expose port 5000 for use by other parts of your system/applications
 EXPOSE 5000 
+EXPOSE 11434
+
 
 # On container startup, run main.py with Python
 CMD ["python", "main.py"]
