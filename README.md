@@ -27,7 +27,7 @@ Technical Stuff:
 How to Use It?
 ------------------
 
-1. Clone this repository: `git clone https://github.com/[Your-Git-Username]/Retrona-Bot.git`
+1. Clone this repository: `git clone https://github.com/zarigata/Retrona-Bot.git`
 2. Install the necessary libraries: `pip install -r requirements.txt` (assuming you have Python 3.x installed)
 3. Create a new file named `token.json` and add your Retrona bot token to it. The format should be:
 ```json
